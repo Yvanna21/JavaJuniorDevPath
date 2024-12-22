@@ -1,52 +1,49 @@
-Le framework des collections en Java est une architecture puissante pour stocker et manipuler des groupes d'objets. 
-Voici une vue d'ensemble de la hiérarchie des collections en Java :
+The Java Collections Framework is a powerful architecture for storing and manipulating groups of objects. Here is an overview of the collections hierarchy in Java:
 
-### Interfaces Principales
-1. **Collection** : Interface racine de la plupart des collections.
-   - **List** : Une collection ordonnée qui permet des éléments en double.
+### Core Interfaces
+1. **Collection**: Root interface for most collections.
+   - **List**: An ordered collection that allows duplicate elements.
      - **ArrayList**
      - **LinkedList**
      - **Vector**
      - **Stack**
-   - **Set** : Une collection qui ne permet pas les éléments en double.
+   - **Set**: A collection that does not allow duplicate elements.
      - **HashSet**
      - **LinkedHashSet**
      - **TreeSet**
-   - **Queue** : Une collection utilisée pour maintenir les éléments avant le traitement.
+   - **Queue**: A collection used to hold elements before processing.
      - **PriorityQueue**
      - **Deque**
        - **ArrayDeque**
        - **LinkedList**
 
-2. **Map** : Interface pour les collections de paires clé-valeur.
+2. **Map**: Interface for key-value pair collections.
    - **HashMap**
    - **LinkedHashMap**
    - **TreeMap**
    - **Hashtable**
    - **ConcurrentHashMap**
 
-### Classes Abstraites
+### Abstract Classes
 - **AbstractCollection**
 - **AbstractList**
 - **AbstractSet**
 - **AbstractQueue**
 - **AbstractMap**
 
-### Classes Utilitaires pour les Itérateurs
-- **Iterator : Permet d'itérer sur les éléments d'une collection.**
+### Iterator Utility Classes
+- **Iterator: Allows iteration over collection elements.**
+- **ListIterator: Extends the Iterator interface for lists, enables bidirectional iteration.**
 
-- **ListIterator : Étend l'interface Iterator pour les listes, permet l'itération dans les deux sens.**
+### Support Classes
+- **Collections: Contains utility methods for collections.**
+- **Arrays: Contains methods for manipulating arrays.**
 
-### Classes de Support
-- **Collections : Contient des méthodes utilitaires pour les collections.**
+### Example Methods Used
+- `add(E e)`: Adds an element to the collection.
+- `remove(Object o)`: Removes an element from the collection.
+- `size()`: Returns the number of elements in the collection.
+- `clear()`: Removes all elements from the collection.
+- `contains(Object o)`: Checks if an element is present in the collection.
 
-- **Arrays : Contient des méthodes pour manipuler les tableaux.**
-
-### Exemples de Méthodes Utilisées
-- `add(E e)` : Ajoute un élément à la collection.
-- `remove(Object o)` : Supprime un élément de la collection.
-- `size()` : Retourne le nombre d'éléments dans la collection.
-- `clear()` : Supprime tous les éléments de la collection.
-- `contains(Object o)` : Vérifie si un élément est présent dans la collection.
-
-Pour plus de détails, consulter [cet article]https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collections.html
+For more details, refer to (https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collections.html).
